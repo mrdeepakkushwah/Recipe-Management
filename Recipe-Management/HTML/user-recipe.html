@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Management || User-Recipe</title>
+    <link rel="icon" href="../assets/fav-icon.png" />
+    <link rel="stylesheet" href="../Style/recipe.css" />
+    <link rel="stylesheet" href="../Style/user-recipe.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="nav-item">
+          <li class="nav-list">
+            <a href="home.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-list">
+            <a href="user-recipe.html" class="nav-link">My Recipes</a>
+          </li>
+          <li class="nav-list">
+            <a href="bookmark.html" class="nav-link">Bookmarks</a>
+          </li>
+          <li class="nav-list">
+            <a href="about.html" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-list">
+            <a href="contact.html" class="nav-link">Contact Us</a>
+          </li>
+        </ul>
+        <button id="logout">Logout</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="user-recipe-section">
+        <h2>My Recipes</h2>
+        <button id="add-recipe-btn" class="btn">Add Recipe</button>
+
+        <div id="recipe-list"></div>
+      </section>
+
+      <section id="recipe-form-section">
+        <h2>Add or Edit Recipe</h2>
+        <form id="recipe-form">
+          <div class="form-group">
+            <label for="recipe-title">Recipe Title:</label>
+            <input
+              type="text"
+              placeholder="Enter recipe title"
+              id="recipe-title"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="recipe-description">Recipe Description:</label>
+            <textarea id="recipe-description" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="recipe-time">Ready in Minutes:</label>
+            <input
+              type="number"
+              id="recipe-time"
+              placeholder="e.g. 45"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="recipe-servings">Servings:</label>
+            <input
+              type="number"
+              id="recipe-servings"
+              placeholder="e.g. 3"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="recipe-image">Recipe Image:</label>
+            <input type="file" id="recipe-image" required accept="image/*" />
+          </div>
+
+          <button type="submit" >Save Recipe</button>
+          <button type="button" id="cancel-recipe-btn">Cancel</button>
+        </form>
+      </section>
+
+      <div id="overlay"></div>
+    </main>
+
+    <footer>
+      <p>&copy 2024 Recipe Management Application</p>
+    </footer>
+
+    <script src="../Script/recipe.js"></script>
+  </body>
+</html>

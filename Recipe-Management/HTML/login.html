@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login or Signup</title>
+    <link rel="icon" href="../assets/fav-icon.png" />
+    <link rel="stylesheet" href="../Style/login.css" />
+  </head>
+  <body>
+    <h1 class="welcome-heading">Welcome To Our Website 😎</h1>
+
+    <div class="modal-btns">
+      <button id="signup-modal-btn">Signup</button>
+      <button id="login-modal-btn">Login</button>
+    </div>
+
+    <div id="signup-modal" class="modals">
+      <div class="modal-content">
+        <span class="close" id="close-signup">&times;</span>
+        <h2>Signup</h2>
+        <form id="signup-form">
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter Your Name..."
+            required
+          />
+          <input
+            type="email"
+            id="email-signup"
+            placeholder="Enter Your Email..."
+            required
+          />
+          <input
+            type="password"
+            id="password-signup"
+            placeholder="Enter Your Password..."
+            required
+          />
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="login-modal" class="modals">
+      <div class="modal-content">
+        <span class="close" id="close-login">&times;</span>
+        <h2>Login</h2>
+        <form id="login-form">
+          <input
+            type="email"
+            id="email-login"
+            placeholder="Enter Your Email..."
+            required
+          />
+          <input
+            type="password"
+            id="password-login"
+            placeholder="Enter Your Password..."
+            required
+          />
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="../Script/recipe.js"></script>
+  </body>
+</html>

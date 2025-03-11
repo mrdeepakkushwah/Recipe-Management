@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling Navbar */
+
+.navbar {
+  background-image: linear-gradient(to Left, blue, rgb(26, 158, 158), green);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.nav-item {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+.nav-link:hover {
+  color: black;
+}
+
+#logout {
+  margin-right: 30px;
+  padding: 10px;
+  width: 80px;
+  height: 40px;
+  background-color: black;
+  color: gold;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+/* Search - Section */
+
+.search-box {
+  background-image: linear-gradient(rgb(242, 216, 169), rgb(242, 211, 216));
+  text-align: center;
+  padding: 50px;
+}
+
+.search-box button {
+  padding: 10px;
+  width: 150px;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: black;
+  color: gold;
+  border: none;
+  border-radius: 10px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.search-box h2 {
+  font-size: 35px;
+  font-style: italic;
+  color: red;
+}
+
+.search-box input {
+  padding: 15px;
+  width: 250px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 0 0 7px black;
+}
+
+.result-box {
+  min-height: 230px;
+  padding: 5px;
+}
+
+.result-box h2 {
+  text-align: center;
+  font-size: 35px;
+  font-style: italic;
+  color: red;
+}
+
+footer {
+  background-color: black;
+  color: gold;
+  padding: 30px;
+  text-align: center;
+  font-size: 25px;
+}
+
+/* About Section */
+.about-section {
+  padding: 30px 50px;
+  text-align: center;
+  background-image: linear-gradient(to right, #ff7e5f, #feb47b);
+  color: white;
+  height: 73vh;
+  font-family: "Brush Script MT", cursive;
+}
+
+.about-section h2 {
+  font-size: 45px;
+  color: white;
+  margin-bottom: 20px;
+  font-family: "Brush Script MT", cursive;
+}
+
+.about-section p {
+  font-size: 25px;
+  color: white;
+  margin-bottom: 15px;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: "Brush Script MT", cursive;
+  font-style: italic;
+}
+
+
